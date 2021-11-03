@@ -50,6 +50,7 @@
 <li class="toctree-l3"><a class="reference internal" href="language/types.html#generalities">Generalities</a></li>
 <li class="toctree-l3"><a class="reference internal" href="language/types.html#quantum-types">Quantum types</a></li>
 <li class="toctree-l3"><a class="reference internal" href="language/types.html#classical-types">Classical types</a></li>
+<li class="toctree-l3"><a class="reference internal" href="language/types.html#types-related-to-timing">Types related to timing</a></li>
 <li class="toctree-l3"><a class="reference internal" href="language/types.html#aliasing">Aliasing</a></li>
 <li class="toctree-l3"><a class="reference internal" href="language/types.html#register-concatenation-and-slicing">Register concatenation and slicing</a></li>
 </ul>
@@ -67,20 +68,36 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="language/classical.html">Classical instructions</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="language/classical.html#low-level-classical-instructions">Low-level classical instructions</a></li>
-<li class="toctree-l3"><a class="reference internal" href="language/classical.html#kernel-function-calls">Kernel function calls</a></li>
+<li class="toctree-l3"><a class="reference internal" href="language/classical.html#extern-function-calls">Extern function calls</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="language/subroutines.html">Subroutines</a></li>
 <li class="toctree-l2"><a class="reference internal" href="language/directives.html">Directives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="language/directives.html#input-output">Input/output</a></li>
 <li class="toctree-l2"><a class="reference internal" href="language/delays.html">Circuit timing</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="language/delays.html#length-and-stretch-types">length and stretch types</a></li>
-<li class="toctree-l3"><a class="reference internal" href="language/delays.html#operations-on-lengths">Operations on lengths</a></li>
-<li class="toctree-l3"><a class="reference internal" href="language/delays.html#delays-and-other-lengthened-instructions">Delays (and other lengthened instructions)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="language/delays.html#duration-and-stretch-types">Duration and stretch types</a></li>
+<li class="toctree-l3"><a class="reference internal" href="language/delays.html#operations-on-durations">Operations on durations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="language/delays.html#delays-and-other-duration-based-instructions">Delays (and other duration-based instructions)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="language/delays.html#boxed-expressions">Boxed expressions</a></li>
 <li class="toctree-l3"><a class="reference internal" href="language/delays.html#barrier-instruction">Barrier instruction</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="language/pulses.html">Pulse-level descriptions of gates and measurement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="language/pulses.html">Pulse-level descriptions of gates and measurement</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="language/pulses.html#inline-calibration-blocks">Inline calibration blocks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="language/pulses.html#restrictions-on-defcal-bodies">Restrictions on defcal bodies</a></li>
+<li class="toctree-l3"><a class="reference internal" href="language/pulses.html#calibrations-in-practice">Calibrations in practice</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="language/openpulse.html">OpenPulse Grammar</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="language/openpulse.html#ports">Ports</a></li>
+<li class="toctree-l3"><a class="reference internal" href="language/openpulse.html#frames">Frames</a></li>
+<li class="toctree-l3"><a class="reference internal" href="language/openpulse.html#waveforms">Waveforms</a></li>
+<li class="toctree-l3"><a class="reference internal" href="language/openpulse.html#play-instruction">Play instruction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="language/openpulse.html#capture-instruction">Capture Instruction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="language/openpulse.html#timing">Timing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="language/openpulse.html#examples">Examples</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="grammar/index.html">OpenQasm 3.0 Grammar</a></li>
@@ -89,7 +106,42 @@
 </section>
 <section id="bibliography">
 <h1>Bibliography<a class="headerlink" href="#bibliography" title="Permalink to this headline">¶</a></h1>
-<p id="bibtex-bibliography-index-0"></p>
+<p id="id1"><dl class="citation">
+<dt class="label" id="id59"><span class="brackets">Exp</span></dt>
+<dd><p>An experimental microarchitecture for a superconducting quantum processor | Proceedings of the 50th Annual IEEE/ACM International Symposium on Microarchitecture. https://dl.acm.org/doi/10.1145/3123939.3123952.</p>
+</dd>
+<dt class="label" id="id51"><span class="brackets">noa</span></dt>
+<dd><p>Unicode Character Categories. URL: <a class="reference external" href="http://www.fileformat.info/info/unicode/category/index.htm">http://www.fileformat.info/info/unicode/category/index.htm</a> (visited on 2020-10-23).</p>
+</dd>
+<dt class="label" id="id62"><span class="brackets">Qui21</span></dt>
+<dd><p>Quil-lang/quil. quil-lang, June 2021.</p>
+</dd>
+<dt class="label" id="id58"><span class="brackets">DiC21</span></dt>
+<dd><p>DiCarloLab-Delft/PycQED_py3. DiCarlo Lab, May 2021.</p>
+</dd>
+<dt class="label" id="id57"><span class="brackets">AKE+20</span></dt>
+<dd><p>Thomas Alexander, Naoki Kanazawa, Daniel J. Egger, Lauren Capelluto, Christopher J. Wood, Ali Javadi-Abhari, and David C. McKay. Qiskit pulse: programming quantum computers through the cloud with pulses. <em>Quantum Science and Technology</em>, 5(4):044006, August 2020. <a class="reference external" href="https://doi.org/10.1088/2058-9565/aba404">doi:10.1088/2058-9565/aba404</a>.</p>
+</dd>
+<dt class="label" id="id45"><span class="brackets">BBC+95</span></dt>
+<dd><p>A. Barenco, C. Bennett, R. Cleve, D. DiVincenzo, N. Margolus, P. Shor, T. Sleator, J. Smolin, and H. Weinfurter. Elementary gates for quantum computation. <em>Phys. Rev. A</em>, 1995.</p>
+</dd>
+<dt class="label" id="id50"><span class="brackets">KB84</span></dt>
+<dd><p>Donald Ervin Knuth and Duane Bibby. <em>The texbook</em>. Volume 3. Addison-Wesley Reading, 1984.</p>
+</dd>
+<dt class="label" id="id56"><span class="brackets">MaTAB+18</span></dt>
+<dd><p>D.C. Mckay, and T. Alexander, L. Bello, M.J. Biercuk, L. Bishop, J. Chen, J.M. Chow, D.C. Antonio, D. Egger, S. Filipp, J. Gomez, M. Hush, A. Javadi-Abhari, D. Moreda, P. Nation, B. Paulovicks, E. Winston, C.J. Wood, J. Wootton, and J.M. Gambetta. Qiskit backend specifications for openqasm and openpulse experiments. <em>Arxiv</em>, 2018. <a class="reference external" href="https://arxiv.org/abs/1809.03452v1">arXiv:1809.03452v1</a>.</p>
+</dd>
+<dt class="label" id="id61"><span class="brackets">NM20</span></dt>
+<dd><p>Thien Nguyen and Alexander McCaskey. Enabling Pulse-level Programming, Compilation, and Execution in XACC. <em>arXiv:2003.11971 [physics, physics:quant-ph]</em>, March 2020. <a class="reference external" href="https://arxiv.org/abs/2003.11971">arXiv:2003.11971</a>.</p>
+</dd>
+<dt class="label" id="id54"><span class="brackets">PMS+14</span></dt>
+<dd><p>Alberto Peruzzo, Jarrod McClean, Peter Shadbolt, Man-Hong Yung, Xiao-Qi Zhou, Peter J. Love, Alán Aspuru-Guzik, and Jeremy L. O’Brien. A variational eigenvalue solver on a photonic quantum processor. <em>Nature Communications</em>, Jul 2014. URL: <a class="reference external" href="http://dx.doi.org/10.1038/ncomms5213">http://dx.doi.org/10.1038/ncomms5213</a>, <a class="reference external" href="https://doi.org/10.1038/ncomms5213">doi:10.1038/ncomms5213</a>.</p>
+</dd>
+<dt class="label" id="id49"><span class="brackets">Wil89</span></dt>
+<dd><p>M. V. Wilkes. The best way to design an automatic calculating machine. In <em>The Early British Computer Conferences</em>, pages 182–184. MIT Press, Cambridge, MA, USA, May 1989.</p>
+</dd>
+</dl>
+</p>
 </section>
 
 
@@ -127,7 +179,7 @@
   <h3 id="searchlabel">Quick search</h3>
     <div class="searchformwrapper">
     <form class="search" action="search.html" method="get">
-      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
       <input type="submit" value="Go" />
     </form>
     </div>
@@ -149,7 +201,7 @@
       &copy;2017-2020, Andrew W. Cross, Lev S. Bishop, John A. Smolin, Jay M. Gambetta.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.0.2</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.2.0</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
